@@ -5,14 +5,13 @@ function alterarStatus(id) {
     
     if (imagem.classList.contains('dashboard__item__img--rented')) {
         let resposta = confirm ('Você tem certeza que quer devolver?');
-
         if (resposta) {
-        imagem.classList.remove('dashboard__item__img--rented');
-        botao.classList.remove('dashboard__item__button--return');
-        botao.textContent = 'Alugar';
+            imagem.classList.remove('dashboard__item__img--rented');
+            botao.classList.remove('dashboard__item__button--return');
+            botao.textContent = 'Alugar';
         } else {
-        alert('Você canselou a devolução');
-        }  
+            alert('Você canselou a devolução');
+        } 
     } else {  
         imagem.classList.add('dashboard__item__img--rented');
         botao.textContent = 'Devolver';
